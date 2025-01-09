@@ -42,7 +42,7 @@ export default function Table() {
             </div>
 
             {sortedData.map((dataItem, index) => (
-                <div key={index} className="row ms-1 lower-border" style={{height:"10vh"}}>
+                <div key={index} className="row ms-1 lower-border">
                     <div className="col-lg-1 col-1"><p>{index + 1}</p></div>
                     <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
                     <div className="col-lg-1 col-2"><p>{dataItem.name}</p></div>
@@ -54,7 +54,7 @@ export default function Table() {
                     <div className="col-lg-1 col-1 ps-3"><p><FaChevronDown /></p></div>
                 </div>
             ))}
-            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw", height:"40vh" }} />
+            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw", height:"30vh" }} />
             <div class="d-flex flex-row justify-content-around bg-dark text-light position-fixed bottom-0 w-100 icons">
                <FaTv size={30}/>
                <FaList size={30}/>
