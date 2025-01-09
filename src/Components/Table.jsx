@@ -27,7 +27,7 @@ export default function Table() {
 
     return(
         <div class="table-container">
-            <img src="/images/header design.jpg" style={{height:"30vh", width:"100vw"}}/>
+            <img alt="header image"src="/images/header design.jpg" style={{height:"30vh", width:"100vw"}}/>
             <div class="row border border-1 border-dark mt-1 ms-1">
                 <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
                 <div class="col-lg-1 col-2"><p></p></div>
@@ -43,7 +43,7 @@ export default function Table() {
             {sortedData.map((dataItem, index) => (
                 <div key={index} className="row ms-1 lower-border">
                     <div className="col-lg-1 col-1"><p>{index + 1}</p></div>
-                    <div className="col-lg-1 col-2"><img src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
+                    <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
                     <div className="col-lg-1 col-2"><p>{dataItem.name}</p></div>
                     <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
                     <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 2"]}</p></div>
@@ -53,7 +53,7 @@ export default function Table() {
                     <div className="col-lg-1 col-1 ps-3"><p><FaChevronDown /></p></div>
                 </div>
             ))}
-            <img src="/images/footer design.jpg" style={{ width: "100vw" }} />
+            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw" }} />
         </div>
     );
 }
