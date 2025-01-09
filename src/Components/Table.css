@@ -1,0 +1,7 @@
+.table-container{
+    overflow: hidden;
+}
+
+.lower-border{
+    border-bottom: 1px solid grey;
+}
