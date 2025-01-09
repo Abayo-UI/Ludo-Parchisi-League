@@ -28,6 +28,7 @@ export default function Table() {
 
     return(
         <div class="table-container">
+            <div class="bg-dark text-light position-sticky top-0 text-center w-100 icons py-1"><h3>LPL 23/24</h3></div>
             <img alt="header image"src="/images/header design.jpg" style={{height:"20vh", width:"100vw"}}/>
             <div class="row border border-1 border-dark mt-1 ms-1">
                 <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
