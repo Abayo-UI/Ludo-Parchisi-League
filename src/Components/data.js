@@ -3,10 +3,10 @@ const data = [
         "id":1,
         "image": "/ludo-parchisi-league/public/images/header design.jpg",
         "name":"Don",
-        "no.of times pos 1":  14,
-        "no.of times pos 2":  17,
-        "no.of times pos 3":  21,
-        "no.of times pos 4":  19,
+        "no.of times pos 1":  0,
+        "no.of times pos 2":  0,
+        "no.of times pos 3":  0,
+        "no.of times pos 4":  0,
         "points": 0
     },
 
