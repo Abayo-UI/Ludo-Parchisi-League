@@ -55,7 +55,7 @@ export default function Table() {
                 </div>
             ))}
             <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw", height:"30vh" }} />
-            <div class="d-flex flex-row justify-content-around bg-dark text-light position-fixed bottom-0 w-100 icons">
+            <div class="d-flex flex-row justify-content-around bg-dark text-light position-fixed bottom-0 w-100 icons py-1">
                <FaTv size={30}/>
                <FaList size={30}/>
                <FaTrophy size={30}/>
