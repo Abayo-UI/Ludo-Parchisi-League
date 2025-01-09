@@ -1,8 +1,9 @@
 import data from "./data";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Table.css";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown,FaTv, FaList, FaTrophy, FaChartBar } from "react-icons/fa";
 import { useEffect, useState } from "react";
+
 
 export default function Table() {
     const [sortedData, setSortedData] = useState([]);
@@ -27,7 +28,7 @@ export default function Table() {
 
     return(
         <div class="table-container">
-            <img alt="header image"src="/images/header design.jpg" style={{height:"30vh", width:"100vw"}}/>
+            <img alt="header image"src="/images/header design.jpg" style={{height:"20vh", width:"100vw"}}/>
             <div class="row border border-1 border-dark mt-1 ms-1">
                 <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
                 <div class="col-lg-1 col-2"><p></p></div>
@@ -41,7 +42,7 @@ export default function Table() {
             </div>
 
             {sortedData.map((dataItem, index) => (
-                <div key={index} className="row ms-1 lower-border">
+                <div key={index} className="row ms-1 lower-border" style={{height:"10vh"}}>
                     <div className="col-lg-1 col-1"><p>{index + 1}</p></div>
                     <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
                     <div className="col-lg-1 col-2"><p>{dataItem.name}</p></div>
@@ -53,7 +54,13 @@ export default function Table() {
                     <div className="col-lg-1 col-1 ps-3"><p><FaChevronDown /></p></div>
                 </div>
             ))}
-            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw" }} />
+            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw", height:"40vh" }} />
+            <div class="d-flex flex-row justify-content-around bg-dark text-light position-fixed bottom-0 w-100 icons">
+               <FaTv size={30}/>
+               <FaList size={30}/>
+               <FaTrophy size={30}/>
+               <FaChartBar size={30}/>
+            </div>
         </div>
     );
 }

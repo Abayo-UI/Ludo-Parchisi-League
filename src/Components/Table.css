@@ -5,3 +5,7 @@
 .lower-border{
     border-bottom: 1px solid grey;
 }
+
+.icons{
+    opacity: 0.9;
+}
