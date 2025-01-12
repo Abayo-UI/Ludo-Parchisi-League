@@ -53,7 +53,7 @@ useEffect(() => {
 return(  
     <div class="table-container">
         <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red">
-            <h3>LPL 24/25 Standings</h3>
+            <h3>Ludo Parchisi Leagues(LPL) 24/25 Standings</h3>
         </div>
         <div class="row border border-1 border-dark mt-1 ps-1">
             <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
