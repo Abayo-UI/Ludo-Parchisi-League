@@ -1,9 +1,10 @@
 import Table from "./Components/Table";
+import { enterPlayersPositions } from "./Components/playersMatchData";
 
 function App() {
   return (
     <div>
-      <Table/>
+      <Table matchesPlayed={enterPlayersPositions}/>
     </div>
   );
 }
