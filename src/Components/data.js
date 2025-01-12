@@ -1,11 +1,11 @@
 const data = [
     {
         "id":1,
-        "image": "/ludo-parchisi-league/public/images/header design.jpg",
+        "image": "",
         "name":"Don",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
+        "no.of times pos 3":  10,
         "no.of times pos 4":  0,
         "points": 0
     },
@@ -16,7 +16,7 @@ const data = [
         "name": "Kamar",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
+        "no.of times pos 3":  17,
         "no.of times pos 4":  0,
         "points": 0
     },
@@ -27,7 +27,7 @@ const data = [
         "name": "Kevin",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
+        "no.of times pos 3":  17,
         "no.of times pos 4":  0,
         "points": 0
     },
@@ -38,8 +38,8 @@ const data = [
         "name": "Leslie",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
-        "no.of times pos 4": 0,
+        "no.of times pos 3":  30,
+        "no.of times pos 4":  0,
         "points": 0
     },
 
@@ -49,7 +49,7 @@ const data = [
         "name": "Rony",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
+        "no.of times pos 3":  30,
         "no.of times pos 4":  0,
         "points": 0
     },
@@ -60,7 +60,7 @@ const data = [
         "name": "Stano",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
-        "no.of times pos 3":  0,
+        "no.of times pos 3":  33,
         "no.of times pos 4":  0,
         "points": 0
     },
@@ -71,7 +71,7 @@ const data = [
         "name": "Tony",
         "no.of times pos 1": 0,
         "no.of times pos 2": 0,
-        "no.of times pos 3": 0,
+        "no.of times pos 3": 35,
         "no.of times pos 4": 0,
         "points": 90
     },

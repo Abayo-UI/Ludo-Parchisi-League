@@ -1,19 +1,35 @@
 import data from "./data";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Table.css";
-import { FaChevronDown,FaTv, FaList, FaTrophy, FaChartBar } from "react-icons/fa";
+import { FaChevronDown,FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 
 export default function Table() {
-    const [sortedData, setSortedData] = useState([]);
+    const [ sortedData, setSortedData ] = useState([]);
 
     function calculatePoints(one, two, three, four) {
         let totalOne = one * 3;
         let totalTwo = two * 2;
         let totalThree = three * 1;
         let totalFour = four * 0;
+        
         return totalOne + totalTwo + totalThree + totalFour;
+    }
+
+    let index = 0;
+    function assignIndex(item, sortedData){
+        
+        if (item === 0) {
+            index = item + 1;
+            return index;
+        } else if (sortedData[item].points === sortedData[item - 1].points) {
+            index = index;
+            return index;
+        } else {
+            index = item + 1;
+            return index;
+        }
     }
 
     useEffect(() => {
@@ -26,10 +42,9 @@ export default function Table() {
         setSortedData(sortedDataArray);
     }, []);
 
-    return(
+    return(  
         <div class="table-container">
-            <div class="bg-dark text-light position-sticky top-0 text-center w-100 icons py-1"><h3>LPL 24/25</h3></div>
-            <img alt="header image"src="/images/header design.jpg" style={{height:"20vh", width:"100vw"}}/>
+            <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red"><h3>LPL 24/25</h3></div>
             <div class="row border border-1 border-dark mt-1 ms-1">
                 <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
                 <div class="col-lg-1 col-2"><p></p></div>
@@ -44,7 +59,7 @@ export default function Table() {
 
             {sortedData.map((dataItem, index) => (
                 <div key={index} className="row ms-1 lower-border">
-                    <div className="col-lg-1 col-1"><p>{index + 1}</p></div>
+                    <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
                     <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
                     <div className="col-lg-1 col-2"><p>{dataItem.name}</p></div>
                     <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
@@ -55,12 +70,29 @@ export default function Table() {
                     <div className="col-lg-1 col-1 ps-3"><p><FaChevronDown /></p></div>
                 </div>
             ))}
-            <img src="/images/footer design.jpg" alt="footer image" style={{ width: "100vw", height:"30vh" }} />
-            <div class="d-flex flex-row justify-content-around bg-dark text-light position-fixed bottom-0 w-100 icons py-1">
-               <FaTv size={30}/>
-               <FaList size={30}/>
-               <FaTrophy size={30}/>
-               <FaChartBar size={30}/>
+            <img class="col-6" alt="header image" src="/images/header design.jpg" style={{height:"30vh"}}/>
+            <img class="col-6" alt="footer image" src="/images/footer design.jpg"  style={{height:"30vh"}}/>
+            <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons py-1">
+               
+                <div>
+                <p>News</p>
+                <FaTv size={30}/>
+                </div>
+
+                <div>
+                <p>Standings</p>
+                <FaList size={30}/>
+                </div>
+
+                <div>
+                <p>Fixtures</p>
+                <FaCalendarAlt size={30}/>
+                </div>
+
+                <div>
+                <p>Rules</p>
+                <FaFileAlt size={30}/>
+                </div>
             </div>
         </div>
     );
