@@ -70,8 +70,8 @@ export default function Table() {
                     <div className="col-lg-1 col-1 ps-3"><p><FaChevronDown /></p></div>
                 </div>
             ))}
-            <img class="col-6" alt="header image" src="/images/header design.jpg" style={{height:"30vh"}}/>
-            <img class="col-6" alt="footer image" src="/images/footer design.jpg"  style={{height:"30vh"}}/>
+            {/*<img class="col-6" alt="header image" src="/images/header design.jpg" style={{height:"30vh"}}/>*/}
+            {/*<img class="col-6" alt="footer image" src="/images/footer design.jpg"  style={{height:"30vh"}}/>*/}
             <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons py-1">
                
                 <div>
