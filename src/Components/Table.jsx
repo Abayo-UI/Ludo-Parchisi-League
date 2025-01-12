@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Table.css";
-import { FaChevronDown, FaTimes ,FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
+import { FaChevronDown, FaTimes, FaDice, FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import data from "./data";
 
@@ -53,7 +53,7 @@ useEffect(() => {
 return(  
     <div class="table-container">
         <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red">
-            <h4>Ludo Parchisi League(LPL)</h4>
+            <h4> <FaDice size={35} />Ludo Parchisi League(LPL)</h4>
             <h5>24/25 Standings</h5>
         </div>
         <div class="row border border-1 border-dark mt-1 ps-1">
@@ -89,6 +89,7 @@ return(
             </div>
         ))}
         <div class="key mb-5 ms-3 mt-2">
+        
             <p id="key">KEY:</p>
             <p><strong>1:</strong> Number of times a player has become position 1 </p>
             <p><strong>2:</strong> Number of times a player has become position 2 </p>
