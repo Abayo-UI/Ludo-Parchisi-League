@@ -55,10 +55,10 @@ return(
         <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red">
             <h3>LPL 24/25 Standings</h3>
         </div>
-        <div class="row border border-1 border-dark mt-1 ms-1">
+        <div class="row border border-1 border-dark mt-1 ps-1">
             <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
             <div class="col-lg-1 col-2"><p></p></div>
-            <div class="col-lg-1 col-1 text-start text-secondary ps-0"><p>Name</p></div>
+            <div class="col-lg-1 col-2 text-start text-secondary ps-0"><p>Name</p></div>
             <div class="col-lg-1 col-1 text-end text-secondary"><p> 1</p></div>
             <div class="col-lg-1 col-1 text-end text-secondary"><p> 2</p></div>
             <div class="col-lg-1 col-1 text-end text-secondary"><p> 3</p></div>
@@ -69,10 +69,10 @@ return(
         </div>
 
         {sortedData.map((dataItem, index) => (
-            <div key={index} className="row ms-1 lower-border">
+            <div key={index} className="row ps-1 lower-border">
                 <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
                 <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
-                <div className="col-lg-1 col-1 text-start ps-0"><p>{dataItem.name}</p></div>
+                <div className="col-lg-1 col-2 text-start ps-0"><p>{dataItem.name}</p></div>
                 <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 1"]}</p></div>
                 <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 2"]}</p></div>
                 <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 3"]}</p></div>
