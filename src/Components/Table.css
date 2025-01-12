@@ -17,3 +17,8 @@ h3{
 .red{
     background-color: red;
 }
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+}

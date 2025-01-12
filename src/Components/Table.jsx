@@ -87,7 +87,7 @@ return(
         ))}
         {/*<img class="col-6" alt="header image" src="/images/header design.jpg" style={{height:"30vh"}}/>*/}
         {/*<img class="col-6" alt="footer image" src="/images/footer design.jpg"  style={{height:"30vh"}}/>*/}
-        <div class="d-flex flex-row justify-content-around red text-light position-sticky bottom-0 w-100 icons py-1">
+        <div class="d-flex flex-row justify-content-around red text-light bottom w-100 icons py-1">
            
             <div>
             <p>News</p>
