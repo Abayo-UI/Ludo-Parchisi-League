@@ -44,7 +44,9 @@ export default function Table() {
 
     return(  
         <div class="table-container">
-            <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red"><h3>LPL 24/25</h3></div>
+            <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red">
+                <h3>LPL 24/25 Standings</h3>
+            </div>
             <div class="row border border-1 border-dark mt-1 ms-1">
                 <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
                 <div class="col-lg-1 col-2"><p></p></div>
@@ -79,7 +81,7 @@ export default function Table() {
                 <FaTv size={30}/>
                 </div>
 
-                <div>
+                <div style={{color:"#00D1F7"}}>
                 <p>Standings</p>
                 <FaList size={30}/>
                 </div>
