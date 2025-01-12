@@ -7,7 +7,7 @@
 }
 
 .icons{
-    opacity: 0.9;
+    opacity: 1;
 }
 
 h3{
@@ -18,7 +18,14 @@ h3{
     background-color: red;
 }
 
-.bottom{
-    position: sticky;
-    bottom: 0;
+.key :first-child {
+  font-weight: 700;
+}
+
+#key{
+    text-decoration: underline;
+}
+
+.key{
+    font-style: italic;
 }
