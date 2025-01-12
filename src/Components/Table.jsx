@@ -59,13 +59,13 @@ return(
             <div class="col-lg-1 col-1 text-secondary"><p>Pos</p></div>
             <div class="col-lg-1 col-2"><p></p></div>
             <div class="col-lg-1 col-1 text-secondary ps-0"><p>Name</p></div>
-            <div class="col-lg-1 col-1 text-secondary"><p> 1</p></div>
-            <div class="col-lg-1 col-1 text-secondary"><p> 2</p></div>
-            <div class="col-lg-1 col-1 text-secondary"><p> 3</p></div>
-            <div class="col-lg-1 col-1 text-secondary"><p> 4</p></div>
-            <div class="col-lg-1 col-1 text-secondary"><p> MP</p></div>
-            <div class="col-lg-1 col-1" style={{fontWeight:"700"}}><p>Pts</p></div> 
-            <div class="col-lg-1 col-1"></div>
+            <div class="col-lg-1 col-1 text-end text-secondary"><p> 1</p></div>
+            <div class="col-lg-1 col-1 text-end text-secondary"><p> 2</p></div>
+            <div class="col-lg-1 col-1 text-end text-secondary"><p> 3</p></div>
+            <div class="col-lg-1 col-1 text-end text-secondary"><p> 4</p></div>
+            <div class="col-lg-1 col-1 text-end text-secondary"><p> MP</p></div>
+            <div class="col-lg-1 col-1 text-end" style={{fontWeight:"700"}}><p>Pts</p></div> 
+            <div class="col-lg-1 col-1 text-end"></div>
         </div>
 
         {sortedData.map((dataItem, index) => (
@@ -73,13 +73,13 @@ return(
                 <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
                 <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
                 <div className="col-lg-1 col-1 ps-0"><p>{dataItem.name}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 2"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 3"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 4"]}</p></div>
-                <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{matchesPlayed[dataItem.name].length}</p></div>
-                <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{dataItem.points}</p></div>
-                <div className="col-lg-1 col-1 ps-3" onClick={()=> openChevron(index)}><p>{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 1"]}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 2"]}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 3"]}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p>{dataItem["no.of times pos 4"]}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p style={{ fontWeight: "700" }}>{matchesPlayed[dataItem.name].length}</p></div>
+                <div className="col-lg-1 col-1 text-end"><p style={{ fontWeight: "700" }}>{dataItem.points}</p></div>
+                <div className="col-lg-1 col-1 text-end ps-3" onClick={()=> openChevron(index)}><p>{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
                 { moreDetails === index &&
                 (<div> 
                 <p>View Player Stats </p>
