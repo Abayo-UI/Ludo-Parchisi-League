@@ -95,7 +95,7 @@ return(
                 </div>)
                 }
                 { (sortedData.indexOf(dataItem) === 4  && hideViewFullButton)&&
-                <button onClick={displayFullTable} class="py-2 border border-dark border-1">View Full Table <FaArrowAltCircleRight size={20}/> </button>}
+                <button onClick={displayFullTable} class="btn btn-light py-2 border border-dark border-1">View Full Table <FaArrowAltCircleRight size={20}/> </button>}
             </div>
         ))}
         <div class="key mb-5 ms-3 mt-2">
