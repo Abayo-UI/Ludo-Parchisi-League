@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Table.css";
-import { FaChevronDown, FaTimes, FaDice, FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
+import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice, FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import data from "./data";
 
@@ -8,7 +8,9 @@ import data from "./data";
 export default function Table({matchesPlayed}) {
 const [ sortedData, setSortedData ] = useState([]);
 const [ moreDetails, setMoreDetails ] = useState(null);
-const [ chevronUpDown, setChevronUpDown ] = useState(false)
+const [ chevronUpDown, setChevronUpDown ] = useState(false);
+const [ sixthPlayer, setSixthPlayer ] = useState(0);
+const [ hideViewFullButton, setHideViewFullButton ] = useState(true)
 
 
 function calculatePoints(one, two, three, four) {
@@ -38,6 +40,11 @@ function assignIndex(item, sortedData){
 function openChevron(id){
  setMoreDetails(id === moreDetails ? null : id);
  setChevronUpDown(!chevronUpDown);
+}
+
+function displayFullTable(){
+    setSixthPlayer(6);
+    setHideViewFullButton(false);
 }
 
 useEffect(() => {
@@ -70,9 +77,10 @@ return(
         </div>
 
         {sortedData.map((dataItem, index) => (
+            (sortedData.indexOf(dataItem) <= 4 || sixthPlayer === 6 ) &&
             <div key={index} className="row ps-1 lower-border">
                 <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
-                <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} className="w-50 h-50" /></div>
+                <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} class="w-50 h-50" /></div>
                 <div className="col-lg-1 col-2 text-start ps-0"><p>{dataItem.name}</p></div>
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 2"]}</p></div>
@@ -86,6 +94,8 @@ return(
                 <p>View Player Stats </p>
                 </div>)
                 }
+                { (sortedData.indexOf(dataItem) === 4  && hideViewFullButton)&&
+                <button onClick={displayFullTable} class="py-2 border border-dark border-1">View Full Table <FaArrowAltCircleRight size={20}/> </button>}
             </div>
         ))}
         <div class="key mb-5 ms-3 mt-2">

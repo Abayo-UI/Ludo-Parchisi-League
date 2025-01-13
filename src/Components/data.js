@@ -1,7 +1,7 @@
 const data = [
     {
         "id":1,
-        "image": "",
+        "image": "don.jpg",
         "name":"Don",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
@@ -12,7 +12,7 @@ const data = [
 
     { 
         "id": 2,
-        "image": "",
+        "image": "kamar.jpg",
         "name": "Kamar",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
@@ -23,7 +23,7 @@ const data = [
 
     {
         "id": 3,
-        "image": "",
+        "image": "mokaya.jpg",
         "name": "Mokaya",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
@@ -45,7 +45,7 @@ const data = [
 
     { 
         "id": 5,
-        "image": "",
+        "image": "rony.jpg",
         "name": "Rony",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
@@ -56,7 +56,7 @@ const data = [
 
     {
         "id": 6,
-        "image": "",
+        "image": "stano.jpg",
         "name": "Stano",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
@@ -67,7 +67,7 @@ const data = [
 
     { 
         "id": 7,
-        "image": "",
+        "image": "tony.jpg",
         "name": "Tony",
         "no.of times pos 1": 0,
         "no.of times pos 2": 0,
