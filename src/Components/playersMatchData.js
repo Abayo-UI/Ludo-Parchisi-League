@@ -1,12 +1,12 @@
 import data from "./data";
 
 export const  enterPlayersPositions = {
-    "Don": [ ],
+    "Donald": [ ],
     "Kamar": [ ],
     "Mokaya": [ ],
     "Leslie": [ ],
     "Rony": [ ],
-    "Stano": [ ],
+    "Stanley": [ ],
     "Tony": [ ]
 }
 

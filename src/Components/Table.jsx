@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Table.css";
-import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice, FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
+import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import data from "./data";
 
@@ -107,30 +107,6 @@ return(
             <p><strong>4:</strong> Number of times a player has become position 4 </p>
             <p><strong>MP:</strong> Matches Played </p>
             <p><strong>Pts:</strong> Points </p>
-        </div>
-        {/*<img class="col-6" alt="header image" src="/images/header design.jpg" style={{height:"30vh"}}/>*/}
-        {/*<img class="col-6" alt="footer image" src="/images/footer design.jpg"  style={{height:"30vh"}}/>*/}
-        <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons py-1">
-           
-            <div>
-            <p>News</p>
-            <FaTv size={30}/>
-            </div>
-
-            <div style={{color:"#00D1F7"}}>
-            <p>Standings</p>
-            <FaList size={30}/>
-            </div>
-
-            <div>
-            <p>Fixtures</p>
-            <FaCalendarAlt size={30}/>
-            </div>
-
-            <div>
-            <p>Rules</p>
-            <FaFileAlt size={30}/>
-            </div>
         </div>
     </div>
 );

@@ -2,7 +2,7 @@ const data = [
     {
         "id":1,
         "image": "don.jpg",
-        "name":"Don",
+        "name":"Donald",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
         "no.of times pos 3":  0,
@@ -57,7 +57,7 @@ const data = [
     {
         "id": 6,
         "image": "stano.jpg",
-        "name": "Stano",
+        "name": "Stanley",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
         "no.of times pos 3":  0,

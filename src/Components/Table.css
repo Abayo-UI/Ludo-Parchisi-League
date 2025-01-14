@@ -29,3 +29,38 @@ h3{
 .key{
     font-style: italic;
 }
+
+.active-component{
+    color: #00D1F7;
+}
+
+.inactive-component{
+    color: #fff;
+}
+
+.news-container{
+    background-color: #0a0a23;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    height: auto;
+}
+
+.gradient-background{
+    background: linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
+    background: -webkit-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
+    background: -moz-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
+    background: -o-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
+}
+
+#news-one-height{
+    height: 40vh;
+}
+
+#news-two-height{
+    height: 30vh;
+}
+
+#news-three-height{
+    height: 20vh;
+}
