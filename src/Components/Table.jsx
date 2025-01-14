@@ -80,7 +80,7 @@ return(
             (sortedData.indexOf(dataItem) <= 4 || sixthPlayer === 6 ) &&
             <div key={index} className="row ps-1 lower-border">
                 <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
-                <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} class="w-50 h-50" /></div>
+                <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} class="w-75 h-75" /></div>
                 <div className="col-lg-1 col-2 text-start ps-0"><p>{dataItem.name}</p></div>
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 2"]}</p></div>

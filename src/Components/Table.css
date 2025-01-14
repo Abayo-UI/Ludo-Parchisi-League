@@ -39,20 +39,18 @@ h3{
 }
 
 .news-container{
-    background-color: #0a0a23;
-    color: #fff;
+    color: #000;
     font-weight: 600;
     font-size: 1.4rem;
     height: auto;
 }
 
 .gradient-background{
-    background: linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
-    background: -webkit-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
-    background: -moz-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
-    background: -o-linear-gradient(135deg, #0074D9, #FF4136, #2ECC40, #FFDC00);
-}
+    background: linear-gradient(135deg, #0074D9aa, #2ECC40aa, #FFDC00aa, #FF4136aa), url(design\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 #news-one-height{
     height: 40vh;
 }
