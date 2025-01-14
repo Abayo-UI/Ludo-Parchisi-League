@@ -34,7 +34,7 @@ const data = [
 
     {
         "id": 4,
-        "image": "leslie.jpg",
+        "image": "leslie2.jpg",
         "name": "Leslie",
         "no.of times pos 1":  0,
         "no.of times pos 2":  0,
