@@ -35,7 +35,7 @@ const playersProfile = [
         "photo": "leslie2.jpg",
         "name": "Leslie Abayo",
         "last league position": 2,
-        "rivals": ["Rony","Mokaya"],
+        "rivals": ["Rony, ", "Mokaya"],
         "points deducted due to irregularities": 0,
         "achievements": [],
         "paid registration fee": "Not Yet",
