@@ -69,9 +69,13 @@ h3{
 
 .player-profile{
     background: red;
-    height: 59vh;
+    height: 40vh;
 }
 
 .height{
     height: 100%;
+}
+
+.profile-details{
+    margin-top: -9px;
 }
