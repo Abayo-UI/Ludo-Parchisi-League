@@ -4,14 +4,12 @@ import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice } from "react-ico
 import { useEffect, useState } from "react";
 import data from "./data";
 
-
-export default function Table({matchesPlayed}) {
+export default function Table({matchesPlayed, viewPlayerStats, setViewPlayerStats, hideStandings, setStats}) {
 const [ sortedData, setSortedData ] = useState([]);
 const [ moreDetails, setMoreDetails ] = useState(null);
 const [ chevronUpDown, setChevronUpDown ] = useState(false);
 const [ sixthPlayer, setSixthPlayer ] = useState(0);
-const [ hideViewFullButton, setHideViewFullButton ] = useState(true)
-
+const [ hideViewFullButton, setHideViewFullButton ] = useState(true);
 
 function calculatePoints(one, two, three, four) {
     let totalOne = one * 3;
@@ -47,6 +45,17 @@ function displayFullTable(){
     setHideViewFullButton(false);
 }
 
+function handlePlayerStats(playerIdentity){
+    setStats(playerIdentity);
+    setViewPlayerStats(true);
+    hideStandings({
+        news: false,
+        standings: false,
+        fixtures: false,
+        rules: false 
+    })
+}
+
 useEffect(() => {
     const dataWithPoints = data.map(dataItem => {
         const points = calculatePoints(dataItem["no.of times pos 1"], dataItem["no.of times pos 2"], dataItem["no.of times pos 3"], dataItem["no.of times pos 4"]);
@@ -59,7 +68,7 @@ useEffect(() => {
 
 return(  
     <div class="table-container">
-        <div class=" text-light position-sticky top-0 text-center w-100 icons py-1 red">
+        <div class=" text-light position-sticky top-0 text-center w-100 icons  red">
             <h4> <FaDice size={35} />Ludo Parchisi League(LPL)</h4>
             <h5>24/25 Standings</h5>
         </div>
@@ -88,10 +97,10 @@ return(
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 4"]}</p></div>
                 <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{matchesPlayed[dataItem.name].length}</p></div>
                 <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{dataItem.points}</p></div>
-                <div className="col-lg-1 col-1 ps-1" onClick={()=> openChevron(index)}><p>{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
+                <div className="col-lg-1 col-1 ps-1" onClick={()=> openChevron(index)}><p class="pointer">{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
                 { moreDetails === index &&
                 (<div> 
-                <p>View Player Stats </p>
+                <p class="pointer" onClick={()=> handlePlayerStats(dataItem.image)}>View Player Stats <FaArrowAltCircleRight/></p>
                 </div>)
                 }
                 { (sortedData.indexOf(dataItem) === 4  && hideViewFullButton)&&

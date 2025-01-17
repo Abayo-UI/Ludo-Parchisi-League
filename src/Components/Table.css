@@ -46,7 +46,7 @@ h3{
 }
 
 .gradient-background{
-    background: linear-gradient(135deg, #0074D9aa, #2ECC40aa, #FFDC00aa, #FF4136aa), url(design\ bg.jpg);
+    background: linear-gradient(90deg, #0074D9aa, #2ECC40aa, #FFDC00aa, #FF4136aa), url(design\ bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -63,3 +63,11 @@ h3{
     height: 20vh;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
+.player-profile{
+    background: linear-gradient(95deg, #db1c12, #2ecc40f5,#ffdd00f0, #0074d9fa, #db1c12);
+
+}
