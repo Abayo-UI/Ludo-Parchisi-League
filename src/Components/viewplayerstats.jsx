@@ -8,6 +8,7 @@ export default function ViewPlayerStats({stats}){
               { playersProfile.map( player => 
               stats === player.photo &&
               <div class="row height">
+              
               <img alt="" src={`/images/${player.photo}`} class="col-lg-3 col-4 height ms-3"/>
               <div class="col-lg-5 col-7 text-light height">
               <p><strong class="text-dark text-decoration-underline">{player.name.toUpperCase()}</strong></p>
