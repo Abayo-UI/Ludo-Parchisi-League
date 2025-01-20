@@ -1,13 +1,13 @@
 import data from "./data";
 
 export const  enterPlayersPositions = {
-    "Donald": [ ],
-    "Kamar": [ ],
-    "Mokaya": [ ],
-    "Leslie": [ ],
-    "Rony": [ ],
-    "Stanley": [ ],
-    "Tony": [ ]
+    "Donald": [ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,2,1,4,2,3,2],
+    "Kamar": [ 1,1,1,1,1,1,1,1,1,1,4,1,3,2,4,2,1],
+    "Mokaya": [ 1,4,3,2,4,2,1,1],
+    "Leslie": [ 4,1,3,2,2,1,2],
+    "Rony": [ 1,2,3,4,2,2,1],
+    "Stanley": [1,2,4,3,4,1,3],
+    "Tony": [ 2,2,3,4,3,1,1]
 }
 
 function insertNumberOftTimesOfEachPosition(dataItem) {

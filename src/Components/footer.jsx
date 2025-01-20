@@ -12,6 +12,7 @@ import ViewPlayerStats from "./viewplayerstats";
 export default function Footer(){
     const [ viewPlayerStats, setViewPlayerStats ] = useState(false);
     const [ stats, setStats ] = useState("no one");
+    const [ pos, setPos ] = useState(8)
     const [ displayComponent, setDisplayComponent ] = useState({
         news: false,
         standings: true,
@@ -62,10 +63,10 @@ export default function Footer(){
     return(
         <div>
            { displayComponent.news && <News/> }
-           { displayComponent.standings && <Table matchesPlayed={enterPlayersPositions} viewPlayerStats={viewPlayerStats} setViewPlayerStats={setViewPlayerStats} hideStandings={setDisplayComponent} setStats={setStats}/>}
+           { displayComponent.standings && <Table matchesPlayed={enterPlayersPositions} viewPlayerStats={viewPlayerStats} setViewPlayerStats={setViewPlayerStats} hideStandings={setDisplayComponent} setStats={setStats} setPos={setPos} pos={pos}/>}
            { displayComponent.fixtures && <Fixtures/> }
            { displayComponent.rules && <Rules/> }
-           { viewPlayerStats && <ViewPlayerStats stats={stats}/>}
+           { viewPlayerStats && <ViewPlayerStats stats={stats} pos={pos}/>}
 
 
          <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons py-1">

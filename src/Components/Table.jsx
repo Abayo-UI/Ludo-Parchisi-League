@@ -4,7 +4,7 @@ import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice } from "react-ico
 import { useEffect, useState } from "react";
 import data from "./data";
 
-export default function Table({matchesPlayed, viewPlayerStats, setViewPlayerStats, hideStandings, setStats}) {
+export default function Table({matchesPlayed, viewPlayerStats, setViewPlayerStats, hideStandings, setStats, setPos, pos}) {
 const [ sortedData, setSortedData ] = useState([]);
 const [ moreDetails, setMoreDetails ] = useState(null);
 const [ chevronUpDown, setChevronUpDown ] = useState(false);
@@ -45,8 +45,9 @@ function displayFullTable(){
     setHideViewFullButton(false);
 }
 
-function handlePlayerStats(playerIdentity){
+function handlePlayerStats(playerIdentity, pos){
     setStats(playerIdentity);
+    setPos(pos);
     setViewPlayerStats(true);
     hideStandings({
         news: false,
@@ -88,7 +89,7 @@ return(
         {sortedData.map((dataItem, index) => (
             (sortedData.indexOf(dataItem) <= 4 || sixthPlayer === 6 ) &&
             <div key={index} className="row ps-1 lower-border">
-                <div className="col-lg-1 col-1"><p>{assignIndex(index,sortedData)}</p></div>
+                <div className="col-lg-1 col-1 pos"><p>{assignIndex(index,sortedData)}</p></div>
                 <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} class="w-75 h-75" /></div>
                 <div className="col-lg-1 col-2 text-start ps-0"><p>{dataItem.name}</p></div>
                 <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
@@ -100,7 +101,7 @@ return(
                 <div className="col-lg-1 col-1 ps-1" onClick={()=> openChevron(index)}><p class="pointer">{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
                 { moreDetails === index &&
                 (<div> 
-                <p class="pointer" onClick={()=> handlePlayerStats(dataItem.image)}>View Player Stats <FaArrowAltCircleRight/></p>
+                <p class="pointer" onClick={()=> handlePlayerStats(dataItem.image, document.getElementsByClassName("pos")[index].innerText)}>View Player Stats <FaArrowAltCircleRight/></p>
                 </div>)
                 }
                 { (sortedData.indexOf(dataItem) === 4  && hideViewFullButton)&&
