@@ -112,7 +112,8 @@ export default function ViewPlayerStats({stats, pos}){
               <h3 class="text-decoration-underline mt-2 text-center">{player.name.toUpperCase()}'S LPL POINTS DISTRIBUTION ANALYSIS</h3>
               <PlayersPointsVisualization id={player.id}/>
               <h3 class="text-decoration-underline text-center mt-3">Consent form</h3>
-            <div class="text-justify border border-dark border-2 rounded-3 p-3">
+    
+    <div class="text-center border border-dark border-2 rounded-3 p-3" style={{backgroundColor:"gainsboro"}}>
             <p>I, <strong>{player.name}</strong> strongly agree that by participating in this Ludo tournament, I acknowledge that I have read and understood the rules and regulations for this competition. I agree to abide by these rules and regulations and understand that failure to do so may result in disqualification from the tournament or deduction of my points.
             I consent to conduct myself in a sportsmanlike manner throughout the tournament, treating fellow players with respect and fairness.
             I agree to compete with integrity, honesty, and promote friendly competition and enjoyment among participants.

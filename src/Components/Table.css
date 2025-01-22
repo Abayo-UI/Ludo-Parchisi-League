@@ -32,10 +32,18 @@ h3{
 
 .active-component{
     color: #00D1F7;
+    cursor: pointer;
 }
 
 .inactive-component{
     color: #fff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: thin;
+}
+
+.footer{
+    height: 4.2rem;
 }
 
 .news-container{
@@ -106,3 +114,4 @@ h3{
   font-size: 1.5rem;
   font-style: normal;
 }
+

@@ -56,7 +56,7 @@ const playersProfile = [
         "id": 7,
         "photo": "tony.jpg",
         "name": "Tony Owino",
-        "last league position": "N/A",
+        "last league position": "-",
         "rivals": ["Searching..."],
         "points deducted due to irregularities": 0
       }

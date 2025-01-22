@@ -69,25 +69,25 @@ export default function Footer(){
            { viewPlayerStats && <ViewPlayerStats stats={stats} pos={pos}/>}
 
 
-         <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons py-1">
+         <div class="d-flex flex-row justify-content-around red text-light position-fixed bottom-0 w-100 icons pt-1 pb-0 footer">
            <div class={ displayComponent.news ? "active-component" : "inactive-component"}>
-           <p>News</p>
            <FaTv size={30} onClick={displayNewsComponent}/>
+           <p class="fs-6">News</p>
            </div>
 
            <div class={ displayComponent.standings ? "active-component" : "inactive-component"}>
-           <p>Standings</p>
            <FaList size={30} onClick={displayStandingsComponent}/>
+           <p class="fs-6">Standings</p>
            </div>
 
            <div class={ displayComponent.fixtures ? "active-component" : "inactive-component"}>
-           <p>Fixtures</p>
            <FaCalendarAlt size={30} onClick={displayFixturesComponent}/>
+           <p class="fs-6">Fixtures</p>
            </div>
 
            <div class={ displayComponent.rules ? "active-component" : "inactive-component"}>
-           <p>Rules</p>
-           <FaFileAlt size={30} onClick={displayRulesComponent}/>
+           <FaFileAlt size={30}  onClick={displayRulesComponent}/>
+           <p class="fs-6">Rules</p>
            </div>
          </div>
         </div>
