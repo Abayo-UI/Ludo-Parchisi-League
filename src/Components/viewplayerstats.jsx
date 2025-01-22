@@ -102,7 +102,7 @@ export default function ViewPlayerStats({stats, pos}){
               <div class="col-lg-5 col-7 text-light details">
               <p><strong class="text-dark text-decoration-underline">{player.name.toUpperCase()}</strong></p>
               <p class="profile-details"><strong class="text-dark">Rivals: </strong>{player.rivals.map( rival => rival + " ")}</p>
-              <p class="profile-details2"><strong class="text-dark">Pos last year: </strong> <span class="fs-1">{player["last league position"]}</span>/6</p>
+              <p class="profile-details2"><strong class="text-dark">Pos last league: </strong> <span class="fs-1">{player["last league position"]}</span>/6</p>
               <p class="profile-details2"><strong class="text-dark">Current Pos: </strong> <span class="fs-1">{pos}</span>/7</p>
               <p class="profile-details"><strong class="text-dark">Points deducted: </strong> {player["points deducted due to irregularities"]}</p>
               <p class="profile-details"><button class="btn btn-danger text-dark ps-0"><strong class="text-dark">View Unplayed games: </strong></button></p>

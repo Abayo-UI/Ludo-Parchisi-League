@@ -77,7 +77,7 @@ export default function Footer(){
 
            <div class={ displayComponent.standings ? "active-component" : "inactive-component"}>
            <FaList size={30} onClick={displayStandingsComponent}/>
-           <p class="fs-6">Standings</p>
+           <p class="fs-6">Table</p>
            </div>
 
            <div class={ displayComponent.fixtures ? "active-component" : "inactive-component"}>

@@ -46,7 +46,7 @@ const playersProfile = [
       { 
         "id": 6,
         "photo": "stano.jpg",
-        "name": "Stanley Omollo",
+        "name": "Stanley Omolo",
         "last league position": 6,
         "rivals": ["Don,", "Rony",],
         "points deducted due to irregularities": 0
