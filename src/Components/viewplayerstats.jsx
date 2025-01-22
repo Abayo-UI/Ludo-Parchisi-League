@@ -105,12 +105,21 @@ export default function ViewPlayerStats({stats, pos}){
               <p class="profile-details2"><strong class="text-dark">Pos last year: </strong> <span class="fs-1">{player["last league position"]}</span>/6</p>
               <p class="profile-details2"><strong class="text-dark">Current Pos: </strong> <span class="fs-1">{pos}</span>/7</p>
               <p class="profile-details"><strong class="text-dark">Points deducted: </strong> {player["points deducted due to irregularities"]}</p>
-              <p class="profile-details"><strong class="text-dark">Unplayed games: </strong></p>
+              <p class="profile-details"><button class="btn btn-danger text-dark ps-0"><strong class="text-dark">View Unplayed games: </strong></button></p>
               </div>
               </div>
 
               <h3 class="text-decoration-underline mt-2 text-center">{player.name.toUpperCase()}'S LPL POINTS DISTRIBUTION ANALYSIS</h3>
               <PlayersPointsVisualization id={player.id}/>
+              <h3 class="text-decoration-underline text-center mt-3">Consent form</h3>
+            <div class="text-justify border border-dark border-2 rounded-3 p-3">
+            <p>I, <strong>{player.name}</strong> strongly agree that by participating in this Ludo tournament, I acknowledge that I have read and understood the rules and regulations for this competition. I agree to abide by these rules and regulations and understand that failure to do so may result in disqualification from the tournament or deduction of my points.
+            I consent to conduct myself in a sportsmanlike manner throughout the tournament, treating fellow players with respect and fairness.
+            I agree to compete with integrity, honesty, and promote friendly competition and enjoyment among participants.
+            </p>
+            <input class="fs-2" type="checkbox" size={25} checked/> I pledge to uphold the rules to the best of my ability.
+            <p class="signature">{player.name}...</p>
+            </div>
               <div style={{height:"20vh"}}></div>
               </div>
               )

@@ -5,7 +5,7 @@ const playersProfile = [
       "last league position": 4,
       "rivals": ["Stano,", "Mokaya"],
       "points deducted due to irregularities": 0
-    },
+    }, 
 
     {  
       "id": 2, 

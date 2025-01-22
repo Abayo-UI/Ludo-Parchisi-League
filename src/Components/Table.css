@@ -80,10 +80,29 @@ h3{
     margin-top: -9px;
 }
 
+.profile-details > button{
+    margin-top: -10px;
+    margin-left: -3px;
+}
+
 .profile-details2{
     margin-top: -22px;
 }
 
 .details{
     margin-left: -15px;
+}
+
+.signaure{
+        font-family: "Playwrite IN", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 2rem;
+}
+
+.signature{
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-style: normal;
 }
