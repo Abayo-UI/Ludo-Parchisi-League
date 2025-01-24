@@ -44,40 +44,49 @@ function PlayersPointsVisualization({id}) {
                         .attr("transform", `translate(${xpadding}, 0)`)
                         .call(yAxis);
 
-        data.map( (item)=> {
-            ( id === item.id ) && 
-            d3.select("svg")
-              .append("rect")
-              .attr("height", h - ypadding - yScale(item["no.of times pos 1"]))
-              .attr("width", 40)
-              .attr("x", xScale(noOfTimesArray[0]) + xpadding)
-              .attr("y", yScale(item["no.of times pos 1"]))
-              .attr("fill", "red");
-
-            d3.select("svg")
-              .append("rect")
-              .attr("height", h - ypadding - yScale(item["no.of times pos 2"]))
-              .attr("width", 40)
-              .attr("x", xScale(noOfTimesArray[1]) + xpadding)
-              .attr("y", yScale(item["no.of times pos 2"]))
-              .attr("fill", "yellow");
-
-            d3.select("svg")
-              .append("rect")
-              .attr("height", h - ypadding - yScale(item["no.of times pos 3"]))
-              .attr("width", 40)
-              .attr("x", xScale(noOfTimesArray[2]) + xpadding)
-              .attr("y", yScale(item["no.of times pos 3"]))
-              .attr("fill", "green");
-
-            d3.select("svg")
-              .append("rect")
-              .attr("height", h - ypadding - yScale(item["no.of times pos 4"]))
-              .attr("width", 40)
-              .attr("x", xScale(noOfTimesArray[3]) + xpadding)
-              .attr("y", yScale(item["no.of times pos 4"]))
-              .attr("fill", "blue");
-        })
+                        data.map((item) => {
+                          if (id === item.id) {
+                              if (item["no.of times pos 1"] !== 0) {
+                                  d3.select("svg")
+                                      .append("rect")
+                                      .attr("height", h - ypadding - yScale(item["no.of times pos 1"]))
+                                      .attr("width", 40)
+                                      .attr("x", xScale(noOfTimesArray[0]) + xpadding)
+                                      .attr("y", yScale(item["no.of times pos 1"]))
+                                      .attr("fill", "red");
+                              }
+                      
+                              if (item["no.of times pos 2"] !== 0) {
+                                  d3.select("svg")
+                                      .append("rect")
+                                      .attr("height", h - ypadding - yScale(item["no.of times pos 2"]))
+                                      .attr("width", 40)
+                                      .attr("x", xScale(noOfTimesArray[1]) + xpadding)
+                                      .attr("y", yScale(item["no.of times pos 2"]))
+                                      .attr("fill", "yellow");
+                              }
+                      
+                              if (item["no.of times pos 3"] !== 0) {
+                                  d3.select("svg")
+                                      .append("rect")
+                                      .attr("height", h - ypadding - yScale(item["no.of times pos 3"]))
+                                      .attr("width", 40)
+                                      .attr("x", xScale(noOfTimesArray[2]) + xpadding)
+                                      .attr("y", yScale(item["no.of times pos 3"]))
+                                      .attr("fill", "green");
+                              }
+                      
+                              if (item["no.of times pos 4"] !== 0) {
+                                  d3.select("svg")
+                                      .append("rect")
+                                      .attr("height", h - ypadding - yScale(item["no.of times pos 4"]))
+                                      .attr("width", 40)
+                                      .attr("x", xScale(noOfTimesArray[3]) + xpadding)
+                                      .attr("y", yScale(item["no.of times pos 4"]))
+                                      .attr("fill", "blue");
+                              }
+                          }
+                      })
         
                        
 
