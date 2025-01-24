@@ -15,6 +15,7 @@ export default function Fixtures(){
             {fixture} 
             </div>)}
             </div>
+            <div style={{height:"20vh"}}></div>
         </div>
     )
 }

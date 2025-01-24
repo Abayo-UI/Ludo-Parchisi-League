@@ -5,7 +5,7 @@ export default function Rules(){
             <div class="row px-2 border border-1 border-dark">
                 <p class="col-1 border-right"><strong></strong></p>
                 <p class="col-8 border-right" ><strong>RULES</strong></p>
-                <p class="col-3"><strong>PENALTY/AWARD</strong></p>
+                <p class="col-3"><strong>PENALTY</strong></p>
             </div>
 
             <div class="row px-2 border border-1 border-dark">
@@ -16,7 +16,7 @@ export default function Rules(){
 
             <div class="row px-2 border border-1 border-dark">
                 <p class="col-1 border-right text-end">2.</p>
-                <p class="col-8 border-right" >All players participating in the league or tournament must complete all scheduled matches or games until the conclusion of the league or tournament</p>
+                <p class="col-8 border-right" >All players participating in the league must complete all scheduled matches or games until the conclusion of the league.</p>
                 <p class="col-3 text-danger">Pays 50 ksh to all players</p>
             </div>
 

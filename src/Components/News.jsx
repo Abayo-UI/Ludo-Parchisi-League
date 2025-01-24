@@ -1,7 +1,8 @@
 export default function News(){
     return(
         <div class="news-container pt-4 gradient-background">
-             <div class="mx-4  d-flex flex-row justify-content-center">
+            <p>Still under Development</p>
+           {/*  <div class="mx-4  d-flex flex-row justify-content-center">
                 <div class="col-8 col-lg-8 bg-light rounded-3" id="news-one-height"> yes</div>
             </div>  
 
@@ -18,7 +19,8 @@ export default function News(){
 
             <div class="row ms-4 me-1 gap-3 mt-4">
                 <div class="col-9 bg-transparent" id="news-two-height"></div>
-            </div>       
+            </div> 
+            */}      
         </div>
     )
 }

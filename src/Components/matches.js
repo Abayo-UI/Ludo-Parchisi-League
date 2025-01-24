@@ -11,7 +11,7 @@ const fixturesData = [
 
 "Donald, Tony, Kamar, Stano",
 "Kamar, Donald, Abayo, Stepper",
-"Kamar, Tony, Donald, Kama",
+"Kamar, Tony, Donald, Kamar",
 "Kamar, Donald, Tony, Stano",
 
 "Donald, Kevo, Tony, Stano",
@@ -151,7 +151,7 @@ const fixturesData = [
 
 "Stepper, Abayo, Donald, Stano",
 "Abayo, Stepper, Kevo, Tony",
-"Abayo, Kevo, Donald, Kama",
+"Abayo, Kevo, Donald, Kamar",
 "Abayo, Kamar, Kevo, Tony",
 ];
 
