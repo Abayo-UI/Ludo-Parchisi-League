@@ -3,9 +3,10 @@ import News from "./News";
 import { enterPlayersPositions } from "./playersMatchData";
 import { FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 import { useState } from "react";
-import Fixtures from "./Fixtures";
 import Rules from "./Rules";
 import ViewPlayerStats from "./viewplayerstats";
+import Fixtures from "./Fixtures";
+
 
 
 

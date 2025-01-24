@@ -115,3 +115,11 @@ h3{
   font-style: normal;
 }
 
+.rules-container{
+    overflow-x: hidden;
+    font-family: verdana;
+}
+
+.border-right{
+    border-right: 1px solid #000;
+}
