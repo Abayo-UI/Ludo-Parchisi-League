@@ -1,10 +1,10 @@
 const fixturesData = [
-"Kevo, Stano, Donald, Kamar",
-"Kamar, Abayo, Kevo, Stepper",
-"Kevo, Tony, Donald, Stepper",
+"Played",//"Kevo, Stano, Donald, Kamar",
+"Played",//"Kamar, Abayo, Kevo, Stepper",
+"Played",//"Kevo, Tony, Donald, Stepper",
 "Kevo, Tony, Stano, Stepper",
 
-"Abayo, Kamar, Stano, Donal",
+"Abayo, Kamar, Stano, Donald",
 "Kamar, Tony, Abayo, Stepper",
 "Kamar, Abayo, Tony, Stano",
 "Kevo, Stano, Abayo, Kamar",
@@ -19,9 +19,9 @@ const fixturesData = [
 "Tony, Kevo, Abayo, Stepper",
 "Tony, Abayo, Kamar, Stepper",
 
-"Donald, Stano, Kevo, Kama",
+"Donald, Stano, Kevo, Kamar",
 "Stano, Donald, Tony, Stepper",
-"Kevo, Stano, Stepper, Ton",
+"Kevo, Stano, Stepper, Tony",
 "Donald, Abayo, Kevo, Stano",
 
 "Kevo, Tony, Stepper, Abayo",
@@ -41,7 +41,7 @@ const fixturesData = [
 
 "Kamar, Stepper, Abayo, Kevo",
 "Kevo, Stano, Tony, Abayo",
-"Tony, Stano, Stepper, Abay",
+"Tony, Stano, Stepper, Abayo",
 "Kamar, Kevo, Tony, Donald",
 
 "Stepper, Kamar, Tony, Stano",
@@ -85,7 +85,7 @@ const fixturesData = [
 "Donald, Stano, Tony, Kamar",
 
 "Kamar, Tony, Kevo, Stepper",
-"Kevo, Donald, Tony, Abay",
+"Kevo, Donald, Tony, Abayo",
 "Kevo, Abayo, Stepper, Kamar",
 "Kamar, Abayo, Stano, Stepper",
 
@@ -106,7 +106,7 @@ const fixturesData = [
 
 "Stano, Kevo, Tony, Kamar",
 "Stepper, Kamar, Donald, Abayo",
-"Donald, Stano, Kamar, Abay",
+"Donald, Stano, Kamar, Abayo",
 "Abayo, Stepper, Stano, Tony",
 
 "Stano, Abayo, Kevo, Donald",
@@ -129,7 +129,7 @@ const fixturesData = [
 "Stepper, Kevo, Abayo, Donald",
 "Donald, Stano, Stepper, Tony",
 
-"Kamar, Kevo, Abayo, Donal",
+"Kamar, Kevo, Abayo, Donald",
 "Stepper, Stano, Kamar, Tony",
 "Kamar, Stepper, Tony, Donald",
 "Kamar, Stepper, Abayo, Donald",

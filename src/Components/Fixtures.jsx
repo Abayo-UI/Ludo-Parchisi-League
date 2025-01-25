@@ -9,7 +9,6 @@ export default function Fixtures(){
             </div>
             <div class="d-flex flex-column align-items-center">
             { fixturesData.map( (fixture, key) =>
-            
             <div class="d-flex mb-1 border border-dark border-1 col-lg-6 col-11 p-2 text-center"> 
             <p class="me-3"> {key + 1})</p>
             {fixture} 

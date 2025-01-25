@@ -34,7 +34,7 @@ export default function Rules(){
 
             <div class="row px-2 border border-1 border-dark"> 
                 <p class="col-1 border-right text-end">5.</p>
-                <p class="col-8 border-right" >Each player is expected to contribute the registration fee, which will be utilized to award the winners before the 20th game of the league.</p>
+                <p class="col-8 border-right" >Each player is expected to contribute the registration fee, which will be utilized to award the winners before the 35th game of the league.</p>
                 <p class="col-3"> </p>
             </div>
 
