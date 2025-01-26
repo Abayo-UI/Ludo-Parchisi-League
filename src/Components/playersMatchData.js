@@ -1,7 +1,7 @@
 import data from "./data";
 
 export const  enterPlayersPositions = {
-    "Donald": [ 3,3,2,3,4.3],
+    "Donald": [ 3,3,2,3,4,3],
     "Kamar": [ 1,3,4,1],
     "Mokaya": [ 2,4,1,3,3],
     "Leslie": [ 1,4,1,1,2],
