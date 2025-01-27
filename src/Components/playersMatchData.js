@@ -5,7 +5,7 @@ export const  enterPlayersPositions = {
     "Kamar": [ 1,3,4,1,2,3,2],
     "Mokaya": [ 2,4,1,3,3,1],
     "Leslie": [ 1,4,1,1,2,3,2],
-    "Rony": [ 2,2,1,4,2,3,1],
+    "Rony": [ 2,2,1,4,2,3],
     "Stanley": [ 4,3,1,2,1,4,4,4],
     "Tony": [ 4,2,2,4,4,1,3]
 }
