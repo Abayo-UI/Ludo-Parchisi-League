@@ -1,7 +1,9 @@
 import playersProfile from "./playersProfile";
 import data from "./data";
 import * as d3 from "d3";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { fixturesData } from "./matches";
+
 
 function PlayersPointsVisualization({id}) {
     const containerRef = useRef(null);
@@ -99,6 +101,7 @@ function PlayersPointsVisualization({id}) {
 }
 
 export default function ViewPlayerStats({stats, pos}){
+    const [ displayUnplayedGames, setDisplayUnplayedGames ] = useState(false)
     return(
         <div class="px-3 bg-light">
             <div>
@@ -114,10 +117,21 @@ export default function ViewPlayerStats({stats, pos}){
               <p class="profile-details2"><strong class="text-dark">Pos last league: </strong> <span class="fs-1">{player["last league position"]}</span>/6</p>
               <p class="profile-details2"><strong class="text-dark">Current Pos: </strong> <span class="fs-1">{pos}</span>/7</p>
               <p class="profile-details"><strong class="text-dark">Points deducted: </strong> {player["points deducted due to irregularities"]}</p>
-              {/*<p class="profile-details"><button class="btn btn-danger text-dark ps-0"><strong class="text-dark">View Unplayed games: </strong></button></p>*/}
+              <p class="profile-details"><button class="btn btn-light text-danger ps-0 mt-1" onClick={ () => setDisplayUnplayedGames(!displayUnplayedGames)}><strong class="text-danger"> { displayUnplayedGames ? "Hide games" : "View games:" }</strong></button></p>
               </div>
               </div>
-
+              { displayUnplayedGames && 
+              <div class="d-flex flex-column align-items-left unplayed-games my-3 p-1 ps-2 col-lg-4  col-11 rounded-4" style={{backgroundColor:"gainsboro"}}>
+               <p class="text-decoration-underline"> {player.name}'s Unplayed Games:</p>
+              {fixturesData.filter( fixture => fixture.includes(player.name.slice(0,4) ))
+                           .map( fixture => 
+                           <div>
+                            { fixture[fixture.length-1] !== "." &&
+                            fixture}
+                          </div>)}
+              
+              </div>
+               }
               <h3 class="text-decoration-underline mt-2 text-center">{player.name.toUpperCase()}'S LPL POINTS DISTRIBUTION ANALYSIS</h3>
               <PlayersPointsVisualization id={player.id}/>
               <h3 class="text-decoration-underline text-center mt-3">Consent form</h3>

@@ -48,8 +48,6 @@ h3{
 
 .news-container{
     color: #000;
-    font-weight: 600;
-    font-size: 1.4rem;
     height: auto;
 }
 
@@ -57,18 +55,11 @@ h3{
     background: linear-gradient(90deg, #0074D9aa, #2ECC40aa, #FFDC00aa, #FF4136aa), url(design\ bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-#news-one-height{
-    height: 40vh;
-}
-
-#news-two-height{
-    height: 30vh;
-}
-
-#news-three-height{
-    height: 20vh;
+#news-content{
+    margin-top: -12px;
 }
 
 .pointer{
@@ -122,4 +113,13 @@ h3{
 
 .border-right{
     border-right: 1px solid #000;
+}
+
+.unplayed-games{
+   height:10rem;
+   overflow-y: scroll; 
+}
+
+#news-lower-border{
+    border-bottom: 2px double #000;
 }
