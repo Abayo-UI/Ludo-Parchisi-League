@@ -16,13 +16,13 @@ export const fixturesData = [
 
 "13) Donald, Kevin, Tony, Stanley.",
 "14) Leslie, Donald, Tony, Rony.",
-"15) Tony, Kevin, Leslie, Peter",
+"15) Tony, Kevin, Leslie, Peter.",
 "16) Tony, Leslie, Peter, Rony.",
 
-"17) Donald, Stanley, Kevin, Peter",
+"17) Donald, Stanley, Kevin, Peter.",
 "18) Stanley, Donald, Tony, Rony.",
 "19) Kevin, Stanley, Rony, Tony.",
-"20) Donald, Leslie, Kevin, Stanley",
+"20) Donald, Leslie, Kevin, Stanley.",
 
 "21) Kevin, Tony, Rony, Leslie",
 "22) Tony, Donald, Rony, Kevin",
