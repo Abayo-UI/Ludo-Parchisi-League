@@ -4,7 +4,8 @@ import { FaChevronDown, FaArrowAltCircleRight, FaTimes, FaDice } from "react-ico
 import { useEffect, useState } from "react";
 import data from "./data";
 
-export default function Table({matchesPlayed, viewPlayerStats, setViewPlayerStats, hideStandings, setStats, setPos, pos}) {
+
+export default function Table({matchesPlayed, setViewPlayerStats, hideStandings, setStats, setPos}) {
 const [ sortedData, setSortedData ] = useState([]);
 const [ moreDetails, setMoreDetails ] = useState(null);
 const [ chevronUpDown, setChevronUpDown ] = useState(false);
