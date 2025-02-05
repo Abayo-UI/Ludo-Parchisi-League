@@ -60,7 +60,8 @@ function handlePlayerStats(playerIdentity, pos){
 
 useEffect(() => {
     const dataWithPoints = data.map(dataItem => {
-        const points = calculatePoints(dataItem["no.of times pos 1"], dataItem["no.of times pos 2"], dataItem["no.of times pos 3"], dataItem["no.of times pos 4"]);
+        let points = calculatePoints(dataItem["no.of times pos 1"], dataItem["no.of times pos 2"], dataItem["no.of times pos 3"], dataItem["no.of times pos 4"]);
+        if( dataItem.name === "Tony") points -= 1
         return { ...dataItem, points };
     });
 

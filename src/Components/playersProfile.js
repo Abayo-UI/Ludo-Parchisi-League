@@ -48,7 +48,7 @@ const playersProfile = [
         "photo": "stano.jpg",
         "name": "Stanley Omolo",
         "last league position": 6,
-        "rivals": ["RONY,", "__________",],
+        "rivals": ["Rony,", "Tony",],
         "points deducted due to irregularities": 0
       },
 
@@ -57,8 +57,8 @@ const playersProfile = [
         "photo": "tony.jpg",
         "name": "Tony Owino",
         "last league position": "_",
-        "rivals": ["Searching..."],
-        "points deducted due to irregularities": 0
+        "rivals": ["Mokaya"],
+        "points deducted due to irregularities": 1
       }
 ];
 
