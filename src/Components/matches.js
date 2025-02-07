@@ -50,9 +50,9 @@ export const fixturesData = [
 "40) Tony, Leslie, Donald, Kevin.",
 
 "41) Kevin, Stanley, Leslie, Donald.",
-"42) Peter, Rony, Stanley, Leslie",
-"43) Tony, Peter, Donald, Stanley",
-"44) Donald, Rony, Leslie, Kevin",
+"42) Peter, Rony, Stanley, Leslie.",
+"43) Tony, Peter, Donald, Stanley.",
+"44) Donald, Rony, Leslie, Kevin.",
 
 "45) Donald, Leslie, Tony, Stanley",
 "46) Rony, Stanley, Kevin, Donald",
