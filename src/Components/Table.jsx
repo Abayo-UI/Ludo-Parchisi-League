@@ -110,7 +110,7 @@ return(
                 <button onClick={displayFullTable} class="btn btn-light py-2 border border-dark border-1">View Full Table <FaArrowAltCircleRight size={20}/> </button>}
             </div>
         ))}
-        <div class="key mb-5 ms-3 mt-2">
+        <div class="key mb-5 ms-1 mt-2">
         
             <p id="key">KEY:</p>
             <p><strong>1:</strong> Number of times a player has become position 1 </p>
