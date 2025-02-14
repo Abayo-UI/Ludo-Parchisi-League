@@ -7,9 +7,6 @@ import Rules from "./Rules";
 import ViewPlayerStats from "./viewplayerstats";
 import Fixtures from "./Fixtures";
 
-
-
-
 export default function Footer(){
     const [ viewPlayerStats, setViewPlayerStats ] = useState(false);
     const [ stats, setStats ] = useState("no one");
