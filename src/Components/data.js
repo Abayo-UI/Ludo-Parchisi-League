@@ -65,7 +65,7 @@ const data = [
         "no.of times pos 4":  0,
         "points": 0
     },
-
+  
     { 
         "id": 7,
         "image": "tony.jpg",

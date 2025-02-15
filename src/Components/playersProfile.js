@@ -21,7 +21,7 @@ const playersProfile = [
         "photo": "mokaya.jpg",
         "name": "Kevin Mokaya",
         "last league position": 3,
-        "rivals": ["RONY,","_________ " ],
+        "rivals": ["RONY,","Don" ],
         "points deducted due to irregularities": 0
       },
 
@@ -57,10 +57,9 @@ const playersProfile = [
         "photo": "tony.jpg",
         "name": "Tony Owino",
         "last league position": "_",
-        "rivals": ["Mokaya"],
+        "rivals": ["Mokaya,", "Stano"],
         "points deducted due to irregularities": 1
       }
 ];
 
 export default playersProfile;
-

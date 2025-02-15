@@ -1,8 +1,8 @@
-import Table from "./Table";
-import News from "./News";
 import { enterPlayersPositions } from "./playersMatchData";
 import { FaTv, FaList, FaCalendarAlt, FaFileAlt } from "react-icons/fa";
 import { useState } from "react";
+import Table from "./Table";
+import News from "./News";
 import Rules from "./Rules";
 import ViewPlayerStats from "./viewplayerstats";
 import Fixtures from "./Fixtures";
