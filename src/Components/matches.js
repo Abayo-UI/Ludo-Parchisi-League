@@ -72,7 +72,7 @@ export const fixturesData = [
 "57) Stanley, Peter, Kevin, Donald.",
 "58) Donald, Kevin, Rony, Tony.",
 "59) Stanley, Kevin, Rony, Leslie.",
-"60) Peter, Stanley, Kevin, Tony",
+"60) Peter, Stanley, Kevin, Tony.",
 
 "61) Rony, Donald, Leslie, Tony.",
 "62) Donald, Stanley, Tony, Peter",
@@ -116,7 +116,7 @@ export const fixturesData = [
 
 "93) Rony, Tony, Peter, Donald",
 "94) Donald, Tony, Kevin, Rony",
-"95) Stanley, Peter, Leslie, Tony",
+"95) Stanley, Peter, Leslie, Tony.",
 "96) Leslie, Tony, Rony, Stanley",
 
 "97) Kevin, Donald, Rony, Leslie",
@@ -145,7 +145,7 @@ export const fixturesData = [
 "116) Tony, Peter, Rony, Leslie",
 
 "117) Leslie, Rony, Donald, Kevin",
-"118) Peter, Stanley, Kevin, Donald",
+"118) Peter, Stanley, Kevin, Donald.",
 "119) Stanley, Donald, Tony, Leslie",
 "120) Stanley, Leslie, Tony, Peter",
 
