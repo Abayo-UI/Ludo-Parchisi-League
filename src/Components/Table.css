@@ -126,5 +126,6 @@ h3{
 
 .guto{
     color:#fff;
+    visibility: hidden;
     /*display: none;*/
 }
