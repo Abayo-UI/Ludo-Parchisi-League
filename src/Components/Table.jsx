@@ -12,6 +12,7 @@ const [ chevronUpDown, setChevronUpDown ] = useState(false);
 const [ sixthPlayer, setSixthPlayer ] = useState(0);
 const [ hideViewFullButton, setHideViewFullButton ] = useState(true);
 
+
 function calculatePoints(one, two, three, four) {
     let totalOne = one * 3;
     let totalTwo = two * 2;
@@ -62,6 +63,8 @@ useEffect(() => {
     const dataWithPoints = data.map(dataItem => {
         let points = calculatePoints(dataItem["no.of times pos 1"], dataItem["no.of times pos 2"], dataItem["no.of times pos 3"], dataItem["no.of times pos 4"]);
         if( dataItem.name === "Tony") points -= 1
+        if( dataItem.name === "Leslie") points -= 1
+        if( dataItem.name === "Stanley") points -= 1
         return { ...dataItem, points };
     });
 
@@ -89,18 +92,19 @@ return(
         </div>
 
         {sortedData.map((dataItem, index) => (
+            
             (sortedData.indexOf(dataItem) <= 4 || sixthPlayer === 6 ) &&
             <div key={index} className="row ps-1 lower-border">
                 <div className="col-lg-1 col-1 pos"><p>{assignIndex(index,sortedData)}</p></div>
                 <div className="col-lg-1 col-2"><img alt="" src={`/images/${dataItem.image}`} class="w-75 h-75" /></div>
-                <div className="col-lg-1 col-2 text-start ps-0"><p>{dataItem.name}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 1"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 2"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 3"]}</p></div>
-                <div className="col-lg-1 col-1"><p>{dataItem["no.of times pos 4"]}</p></div>
-                <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{matchesPlayed[dataItem.name].length}</p></div>
-                <div className="col-lg-1 col-1"><p style={{ fontWeight: "700" }}>{dataItem.points}</p></div>
-                <div className="col-lg-1 col-1 ps-1" onClick={()=> openChevron(index)}><p class="pointer">{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-2 text-start ps-0" : "col-lg-1 col-2 text-start ps-0" }><p>{dataItem.name}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p>{dataItem["no.of times pos 1"]}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p>{dataItem["no.of times pos 2"]}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p>{dataItem["no.of times pos 3"]}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p>{dataItem["no.of times pos 4"]}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p style={{ fontWeight: "700" }}>{matchesPlayed[dataItem.name].length}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1" : "col-lg-1 col-1"}><p style={{ fontWeight: "700" }}>{dataItem.points}</p></div>
+                <div className={ dataItem.name === "Mokaya" ? " guto col-lg-1 col-1 ps-1" : "col-lg-1 col-1 ps-1"} onClick={()=> openChevron(index)}><p class="pointer">{ chevronUpDown && index === moreDetails ? <FaTimes/> :<FaChevronDown />}</p></div>
                 { moreDetails === index &&
                 (<div> 
                 <p class="pointer" onClick={()=> handlePlayerStats(dataItem.image, document.getElementsByClassName("pos")[index].innerText)}>View Player Stats <FaArrowAltCircleRight/></p>

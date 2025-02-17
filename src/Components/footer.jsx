@@ -13,8 +13,8 @@ export default function Footer(){
     const [ pos, setPos ] = useState(8)
     const [ displayComponent, setDisplayComponent ] = useState({
         news: false,
-        standings: false,
-        fixtures: true,
+        standings: true,
+        fixtures: false,
         rules: false
     });
     

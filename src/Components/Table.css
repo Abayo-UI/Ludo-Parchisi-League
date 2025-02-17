@@ -123,3 +123,7 @@ h3{
 #news-lower-border{
     border-bottom: 2px double #000;
 }
+
+.guto{
+    display: none;
+}

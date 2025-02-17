@@ -31,7 +31,7 @@ const playersProfile = [
         "name": "Leslie Abayo",
         "last league position": 2,
         "rivals": ["Rony,", "Mokaya"],
-        "points deducted due to irregularities": 0
+        "points deducted due to irregularities": 1
       },
 
       { 
@@ -49,7 +49,7 @@ const playersProfile = [
         "name": "Stanley Omolo",
         "last league position": 6,
         "rivals": ["Rony,", "Tony",],
-        "points deducted due to irregularities": 0
+        "points deducted due to irregularities": 1
       },
 
       { 
