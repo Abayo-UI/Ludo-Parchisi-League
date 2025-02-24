@@ -14,7 +14,7 @@ const [ hideViewFullButton, setHideViewFullButton ] = useState(true);
 
 
 function calculatePoints(one, two, three, four) {
-    let totalOne = one * 3;
+    let totalOne = one * 3; 
     let totalTwo = two * 2;
     let totalThree = three * 1;
     let totalFour = four * 0;

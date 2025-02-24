@@ -13,7 +13,7 @@ export const fixturesData = [
 "10) Peter, Donald, Leslie, Rony.",
 "11) Peter, Tony, Donald, Rony.",
 "12) Peter, Donald, Tony, Stanley.",
-
+ 
 "13) Donald, Kevin, Tony, Stanley.",
 "14) Leslie, Donald, Tony, Rony.",
 "15) Tony, Kevin, Leslie, Peter.",
@@ -92,7 +92,7 @@ export const fixturesData = [
 "73) Tony, Kevin, Stanley, Donald",
 "74) Rony, Donald, Stanley, Kevin",
 "75) Rony, Peter, Kevin, Leslie",
-"76) Kevin, Leslie, Tony, Peter",
+"76) Kevin, Leslie, Tony, Peter.",
 
 "77) Kevin, Leslie, Stanley, Rony.",
 "78) Kevin, Peter, Stanley, Donald.",
@@ -104,7 +104,7 @@ export const fixturesData = [
 "83) Donald, Tony, Kevin, Rony.",
 "84) Peter, Stanley, Rony, Tony",
 
-"85) Stanley, Kevin, Tony, Peter",
+"85) Stanley, Kevin, Tony, Peter.",
 "86) Rony, Peter, Donald, Leslie.",
 "87) Donald, Stanley, Peter, Leslie.",
 "88) Leslie, Rony, Stanley, Tony.",
@@ -129,17 +129,17 @@ export const fixturesData = [
 "103) Rony, Kevin, Leslie, Donald",
 "104) Donald, Stanley, Rony, Tony",
 
-"105) Peter, Kevin, Leslie, Donald",
+"105) Peter, Kevin, Leslie, Donald.",
 "106) Rony, Stanley, Peter, Tony",
 "107) Peter, Rony, Tony, Donald",
 "108) Peter, Rony, Leslie, Donald",
 
 "109) Peter, Tony, Rony, Kevin.",
 "110) Tony, Stanley, Rony, Kevin",
-"111) Leslie, Donald, Tony, Stanley",
-"112) Donald, Kevin, Stanley, Peter",
+"111) Leslie, Donald, Tony, Stanley.",
+"112) Donald, Kevin, Stanley, Peter.",
 
-"113) Donald, Kevin, Tony, Stanley",
+"113) Donald, Kevin, Tony, Stanley.",
 "114) Rony, Leslie, Peter, Stanley.",
 "115) Rony, Donald, Kevin, Stanley",
 "116) Tony, Peter, Rony, Leslie",
@@ -147,7 +147,7 @@ export const fixturesData = [
 "117) Leslie, Rony, Donald, Kevin.",
 "118) Peter, Stanley, Kevin, Donald.",
 "119) Stanley, Donald, Tony, Leslie",
-"120) Stanley, Leslie, Tony, Peter",
+"120) Stanley, Leslie, Tony, Peter.",
 
 "121) Rony, Leslie, Donald, Stanley.",
 "122) Leslie, Rony, Kevin, Tony.",
