@@ -49,7 +49,7 @@ const playersProfile = [
         "name": "Stanley Omolo",
         "last league position": 6,
         "rivals": ["Rony,", "Tony",],
-        "points deducted due to irregularities": 1
+        "points deducted due to irregularities": 2
       },
 
       { 
@@ -58,7 +58,7 @@ const playersProfile = [
         "name": "Tony Owino",
         "last league position": "_",
         "rivals": ["Mokaya,", "Stano"],
-        "points deducted due to irregularities": 1
+        "points deducted due to irregularities": 2
       }
 ];
 
