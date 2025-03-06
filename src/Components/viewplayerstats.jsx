@@ -37,7 +37,7 @@ function PlayersPointsVisualization({id}) {
                     .attr("x","-10");
 
         const yScale = d3.scaleLinear()
-                         .domain([0,20])
+                         .domain([0,25])
                          .range([h-ypadding, 10]);
 
         const yAxis = d3.axisLeft(yScale);
