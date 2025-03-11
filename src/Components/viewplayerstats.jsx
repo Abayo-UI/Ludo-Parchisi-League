@@ -65,7 +65,7 @@ function PlayersPointsVisualization({id}) {
                                       .attr("width", 40)
                                       .attr("x", xScale(noOfTimesArray[1]) + xpadding)
                                       .attr("y", yScale(item["no.of times pos 2"]))
-                                      .attr("fill", "yellow");
+                                      .attr("fill", "red");
                               }
                       
                               if (item["no.of times pos 3"] !== 0) {
@@ -75,7 +75,7 @@ function PlayersPointsVisualization({id}) {
                                       .attr("width", 40)
                                       .attr("x", xScale(noOfTimesArray[2]) + xpadding)
                                       .attr("y", yScale(item["no.of times pos 3"]))
-                                      .attr("fill", "green");
+                                      .attr("fill", "red");
                               }
                       
                               if (item["no.of times pos 4"] !== 0) {
@@ -85,7 +85,7 @@ function PlayersPointsVisualization({id}) {
                                       .attr("width", 40)
                                       .attr("x", xScale(noOfTimesArray[3]) + xpadding)
                                       .attr("y", yScale(item["no.of times pos 4"]))
-                                      .attr("fill", "blue");
+                                      .attr("fill", "red");
                               }
                           }
                       })
